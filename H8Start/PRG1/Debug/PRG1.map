@@ -1,0 +1,198 @@
+Archive member included because of file (symbol)
+
+c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a(_divsi3.o)
+                              C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o (__divsi3)
+c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a(_mulsi3.o)
+                              C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o (__mulsi3)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vects          0x00040000       0xf4
+ *(.vects)
+ .vects         0x00040000       0xf4 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\vects.o
+                0x00040000                HardwareVectors
+
+.text           0x00040400      0xd7c
+ *(.text)
+ .text          0x00040400       0x72 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\hwinit.o
+                0x00040400                hw_initialise
+ .text          0x00040472       0x30 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inline.o
+                0x00040472                set_imask_ccr
+                0x00040494                no_operation
+ .text          0x000404a2      0x234 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inthandler.o
+                0x000405fe                INT_IMIB3
+                0x00040616                INT_IMIA4
+                0x000406ca                INT_ADI
+                0x0004050e                INT_IRQ4
+                0x000405da                INT_IMIB2
+                0x000405ce                INT_IMIA2
+                0x0004068e                INT_TEI0
+                0x0004063a                INT_DEND0A
+                0x00040526                INT_WOVI
+                0x000404ba                INT_TRAP2
+                0x0004060a                INT_OVI3
+                0x0004056e                INT_IMIB0
+                0x000405e6                INT_OVI2
+                0x0004051a                INT_IRQ5
+                0x0004066a                INT_ERI0
+                0x000404ea                INT_IRQ1
+                0x000405aa                INT_IMIA1
+                0x00040502                INT_IRQ3
+                0x000406be                INT_TEI1
+                0x00040682                INT_TXI0
+                0x00040532                INT_CMI
+                0x0004065e                INT_DEND1B
+                0x000404f6                INT_IRQ2
+                0x000404de                INT_IRQ0
+                0x00040622                INT_IMIB4
+                0x00040652                INT_DEND1A
+                0x0004057a                INT_OVI0
+                0x000404c6                INT_TRAP3
+                0x000406a6                INT_RXI1
+                0x000404ae                INT_TRAP1
+                0x000406b2                INT_TXI1
+                0x00040676                INT_RXI0
+                0x000405f2                INT_IMIA3
+                0x000405b6                INT_IMIB1
+                0x000405c2                INT_OVI1
+                0x0004069a                INT_ERI1
+                0x000404d2                INT_TRAP4
+                0x00040646                INT_DEND0B
+                0x0004062e                INT_OVI4
+                0x0004053e                INT_IMIA0
+                0x000404a2                INT_NMI
+ .text          0x000406d6      0x2b2 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\LCD.o
+                0x00040906                KursorOff
+                0x00040868                putchar
+                0x0004093e                puts
+                0x0004081c                GotoXY
+                0x000408ce                KursorOn
+                0x000407a0                WriteSterLCD
+                0x00040922                ClrScr
+                0x000406d6                IniLCD
+                0x000407dc                ReadSterLCD
+                0x0004077e                GotowoscLCD
+ .text          0x00040988      0x72a C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+                0x00040f8e                Put_N
+                0x00040a34                odczyt_klawiaure
+                0x00040df6                init_ITU2
+                0x00040c86                odczyt_zew
+                0x00040b94                changePWM
+                0x00040c34                init_ITU0
+                0x00040e32                Ekran_startowy
+                0x00040ac6                startPWM
+                0x00040fb0                Put_4N
+                0x00040c1c                stopPWM
+                0x00040dcc                incre
+                0x00040f4e                Put_S
+                0x00040988                main
+ .text          0x000410b2       0x28 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\start.o
+                0x000410b2                start
+ .text          0x000410da       0x8a c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a(_divsi3.o)
+                0x00041108                __umodsi3
+                0x0004110e                __divsi3
+                0x000410fc                __modsi3
+                0x00041124                __udivsi3
+ .text          0x00041164       0x18 c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a(_mulsi3.o)
+                0x00041164                __mulsi3
+ *(.text.*)
+                0x0004117c                etext = .
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.got
+ *(.got)
+ *(.got.plt)
+
+.rodata         0x0004117c       0x72
+ *(.rodata)
+ .rodata        0x0004117c        0x2 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\LCD.o
+ .rodata        0x0004117e       0x70 C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+ *(.rodata.*)
+                0x000411ee                _erodata = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.jcr
+ *(.jcr)
+
+.tors           0x000411ee        0x0
+                0x000411ee                __CTOR_LIST__ = .
+                0x000411ee                ___ctors = .
+ *(.ctors)
+                0x000411ee                ___ctors_end = .
+                0x000411ee                __CTOR_END__ = .
+                0x000411ee                __DTOR_LIST__ = .
+                0x000411ee                ___dtors = .
+ *(.dtors)
+                0x000411ee                ___dtors_end = .
+                0x000411ee                __DTOR_END__ = .
+                0x000411ee                _mdata = .
+
+.data           0x000fef10        0xc
+                0x000fef10                _data = .
+ *(.data)
+ .data          0x000fef10        0xc C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+                0x000fef12                Fzadane
+                0x000fef14                Tryb_Pracy
+                0x000fef16                Stala_Pracy
+                0x000fef18                takty
+                0x000fef10                wypelnienie
+ *(.data.*)
+                0x000fef1c                _edata = .
+
+.gcc_exc
+ *(.gcc_exc)
+
+.bss            0x000fef1c        0xa
+                0x000fef1c                _bss = .
+ *(.bss)
+ .bss           0x000fef1c        0xa C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+                0x000fef20                licznik1
+                0x000fef24                time
+                0x000fef22                stan_pracy
+                0x000fef1c                count
+                0x000fef1e                licznik0
+ *(COMMON)
+                0x000fef26                _ebss = .
+                0x000fef26                _end = .
+
+.stack          0x000fff00        0x0
+                0x000fff00                _stack = .
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\hwinit.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inline.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inthandler.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\LCD.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\start.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\vects.o
+START GROUP
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptm.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptc.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a
+END GROUP
+OUTPUT(C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\PRG1.x coff-h8300)
+
+.comment        0x000fff00       0xa8
+ .comment       0x000fff00       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\hwinit.o
+ .comment       0x000fff1c       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inline.o
+ .comment       0x000fff38       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\inthandler.o
+ .comment       0x000fff54       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\LCD.o
+ .comment       0x000fff70       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\main.o
+ .comment       0x000fff8c       0x1c C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\Debug\vects.o
+
+.vectors        0x000fffa8        0x0

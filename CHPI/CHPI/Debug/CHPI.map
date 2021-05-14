@@ -1,0 +1,110 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+count               0x2               C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vects          0x00040000       0xf4
+ *(.vects)
+ .vects         0x00040000       0xf4 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\vects.o
+                0x00040000                HardwareVectors
+
+.text           0x00040400       0x92
+ *(.text)
+ .text          0x00040400        0xc C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\hwinit.o
+                0x00040400                hw_initialise
+ .text          0x0004040c        0xc C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\main.o
+                0x0004040c                main
+ .text          0x00040418       0x28 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\start.o
+                0x00040418                start
+ .text          0x00040440       0x52 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+                0x00040440                test
+ *(.text.*)
+                0x00040492                etext = .
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.got
+ *(.got)
+ *(.got.plt)
+
+.rodata         0x00040492       0x28
+ *(.rodata)
+ .rodata        0x00040492       0x28 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+                0x000404b6                string
+ *(.rodata.*)
+                0x000404ba                _erodata = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.jcr
+ *(.jcr)
+
+.tors           0x000404ba        0x0
+                0x000404ba                __CTOR_LIST__ = .
+                0x000404ba                ___ctors = .
+ *(.ctors)
+                0x000404ba                ___ctors_end = .
+                0x000404ba                __CTOR_END__ = .
+                0x000404ba                __DTOR_LIST__ = .
+                0x000404ba                ___dtors = .
+ *(.dtors)
+                0x000404ba                ___dtors_end = .
+                0x000404ba                __DTOR_END__ = .
+                0x000404ba                _mdata = .
+
+.data           0x000fef10        0x0
+                0x000fef10                _data = .
+ *(.data)
+ *(.data.*)
+                0x000fef10                _edata = .
+
+.gcc_exc
+ *(.gcc_exc)
+
+.bss            0x000fef10        0x2
+                0x000fef10                _bss = .
+ *(.bss)
+ *(COMMON)
+ COMMON         0x000fef10        0x2 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+                0x000fef10                count
+                0x000fef12                _ebss = .
+                0x000fef12                _end = .
+
+.stack          0x000fff00        0x0
+                0x000fff00                _stack = .
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\hwinit.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\main.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\start.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\vects.o
+START GROUP
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptm.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptc.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a
+END GROUP
+OUTPUT(C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\CHPI.x coff-h8300)
+
+.comment        0x000fff00       0x70
+ .comment       0x000fff00       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\hwinit.o
+ .comment       0x000fff1c       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\main.o
+ .comment       0x000fff38       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\test.o
+ .comment       0x000fff54       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Debug\vects.o
+
+.vectors        0x000fff70        0x0

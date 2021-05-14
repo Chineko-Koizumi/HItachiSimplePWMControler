@@ -1,0 +1,27 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"CHPI" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\hwinit.c" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\inthandler.h" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\iodefine.h" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\main.c" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\read.c" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\start.asm" 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\test.c" 
+[WORKSPACE_FILE_STATES]
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\hwinit.c" 0 0 1076 550 0 1 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\inthandler.h" 0 0 958 371 0 5 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\iodefine.h" 22 29 958 371 0 6 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\main.c" 0 0 1076 550 0 2 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\read.c" 88 116 958 371 0 3 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\start.asm" 0 0 954 367 0 0 
+"C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\test.c" -4 -30 1076 550 1 4 
+[LOADED_PROJECTS]
+"CHPI" 
+[END]

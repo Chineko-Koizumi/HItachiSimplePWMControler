@@ -1,0 +1,163 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+count               0x2               C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vects          0x00000000       0xf4
+ *(.vects)
+ .vects         0x00000000       0xf4 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\vects.o
+                0x00000000                HardwareVectors
+
+.text           0x00000100      0x2e6
+ *(.text)
+ .text          0x00000100        0xc C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\hwinit.o
+                0x00000100                hw_initialise
+ .text          0x0000010c      0x1ec C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\inthandler.o
+                0x00000220                INT_IMIB3
+                0x00000238                INT_IMIA4
+                0x000002ec                INT_ADI
+                0x00000178                INT_IRQ4
+                0x000001fc                INT_IMIB2
+                0x000001f0                INT_IMIA2
+                0x000002b0                INT_TEI0
+                0x0000025c                INT_DEND0A
+                0x00000190                INT_WOVI
+                0x00000124                INT_TRAP2
+                0x0000022c                INT_OVI3
+                0x000001b4                INT_IMIB0
+                0x00000208                INT_OVI2
+                0x00000184                INT_IRQ5
+                0x0000028c                INT_ERI0
+                0x00000154                INT_IRQ1
+                0x000001cc                INT_IMIA1
+                0x0000016c                INT_IRQ3
+                0x000002e0                INT_TEI1
+                0x000002a4                INT_TXI0
+                0x0000019c                INT_CMI
+                0x00000280                INT_DEND1B
+                0x00000160                INT_IRQ2
+                0x00000148                INT_IRQ0
+                0x00000244                INT_IMIB4
+                0x00000274                INT_DEND1A
+                0x000001c0                INT_OVI0
+                0x00000130                INT_TRAP3
+                0x000002c8                INT_RXI1
+                0x00000118                INT_TRAP1
+                0x000002d4                INT_TXI1
+                0x00000298                INT_RXI0
+                0x00000214                INT_IMIA3
+                0x000001d8                INT_IMIB1
+                0x000001e4                INT_OVI1
+                0x000002bc                INT_ERI1
+                0x0000013c                INT_TRAP4
+                0x00000268                INT_DEND0B
+                0x00000250                INT_OVI4
+                0x000001a8                INT_IMIA0
+                0x0000010c                INT_NMI
+ .text          0x000002f8       0x34 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+                0x000002f8                main
+ .text          0x0000032c       0x10 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\read.o
+                0x0000032c                _read
+ .text          0x0000033c       0x44 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\sbrk.o
+                0x0000033c                _sbrk
+ .text          0x00000380       0x4e C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\start.o
+                0x00000380                start
+ .text          0x000003ce       0x18 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\write.o
+                0x000003ce                _write
+ *(.text.*)
+                0x000003e6                etext = .
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.got
+ *(.got)
+ *(.got.plt)
+
+.rodata         0x000003e6        0x0
+ *(.rodata)
+ *(.rodata.*)
+                0x000003e6                _erodata = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.jcr
+ *(.jcr)
+
+.tors           0x000003e6        0x0
+                0x000003e6                __CTOR_LIST__ = .
+                0x000003e6                ___ctors = .
+ *(.ctors)
+                0x000003e6                ___ctors_end = .
+                0x000003e6                __CTOR_END__ = .
+                0x000003e6                __DTOR_LIST__ = .
+                0x000003e6                ___dtors = .
+ *(.dtors)
+                0x000003e6                ___dtors_end = .
+                0x000003e6                __DTOR_END__ = .
+                0x000003e6                _mdata = .
+
+.data           0x000fef10        0xc
+                0x000fef10                _data = .
+ *(.data)
+ .data          0x000fef10        0xc C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+                0x000fef10                string
+ *(.data.*)
+                0x000fef1c                _edata = .
+
+.gcc_exc
+ *(.gcc_exc)
+
+.bss            0x000fef1c        0x6
+                0x000fef1c                _bss = .
+ *(.bss)
+ .bss           0x000fef1c        0x4 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\sbrk.o
+ *(COMMON)
+ COMMON         0x000fef20        0x2 C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+                0x000fef20                count
+                0x000fef22                _ebss = .
+                0x000fef22                _end = .
+
+.stack          0x000fff00        0x0
+                0x000fff00                _stack = .
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\hwinit.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\inthandler.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\read.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\sbrk.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\start.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\vects.o
+LOAD C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\write.o
+START GROUP
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptm.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptc.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a
+END GROUP
+OUTPUT(C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\CHPI.x coff-h8300)
+
+.comment        0x000fff00       0xc4
+ .comment       0x000fff00       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\hwinit.o
+ .comment       0x000fff1c       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\inthandler.o
+ .comment       0x000fff38       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\main.o
+ .comment       0x000fff54       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\read.o
+ .comment       0x000fff70       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\sbrk.o
+ .comment       0x000fff8c       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\vects.o
+ .comment       0x000fffa8       0x1c C:\WorkSpace\Chmiest_Pigoñ\CHPI\CHPI\Release\write.o
+
+.vectors        0x000fffc4        0x0

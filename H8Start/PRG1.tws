@@ -1,0 +1,25 @@
+[HIMDBVersion]
+2.0
+[DATABASE_VERSION]
+"1.2" 
+[CURRENT_PROJECT]
+"PRG1" 
+[GENERAL_DATA]
+[BREAKPOINTS]
+[OPEN_WORKSPACE_FILES]
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\hwinit.c" 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\inline.c" 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\inthandler.c" 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\iodefine.h" 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\LCD.C" 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\main.c" 
+[WORKSPACE_FILE_STATES]
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\LCD.C" 132 174 811 424 0 4 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\hwinit.c" 0 0 811 424 0 6 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\inline.c" 154 203 811 424 0 5 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\inthandler.c" 88 116 811 424 0 2 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\iodefine.h" 132 174 811 424 0 3 
+"C:\WorkSpace\Chmiest_Pigoñ06\H8Start\PRG1\main.c" -4 -30 973 661 1 1 
+[LOADED_PROJECTS]
+"PRG1" 
+[END]

@@ -1,0 +1,10 @@
+[Target]
+Target=H8/300H Monitor
+Version=8
+[Configuration]
+IOFile=H8300H
+[Mapping]
+Map0=00000000 0000FFFF 3
+Map1=00000000 00000000 6
+Map2=00040000 0005FFFF 1
+Map3=000F8000 000FFFFF 0

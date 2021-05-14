@@ -1,0 +1,166 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+count               0x2               C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.vects          0x00000000       0xf4
+ *(.vects)
+ .vects         0x00000000       0xf4 C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\vects.o
+                0x00000000                HardwareVectors
+
+.text           0x00000400      0x47a
+ *(.text)
+ .text          0x00000400       0x2a C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\hwinit.o
+                0x00000400                hw_initialise
+ .text          0x0000042a       0x24 C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inline.o
+                0x0000042a                set_imask_ccr
+                0x00000440                no_operation
+ .text          0x0000044e      0x1ec C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inthandler.o
+                0x00000562                INT_IMIB3
+                0x0000057a                INT_IMIA4
+                0x0000062e                INT_ADI
+                0x000004ba                INT_IRQ4
+                0x0000053e                INT_IMIB2
+                0x00000532                INT_IMIA2
+                0x000005f2                INT_TEI0
+                0x0000059e                INT_DEND0A
+                0x000004d2                INT_WOVI
+                0x00000466                INT_TRAP2
+                0x0000056e                INT_OVI3
+                0x000004f6                INT_IMIB0
+                0x0000054a                INT_OVI2
+                0x000004c6                INT_IRQ5
+                0x000005ce                INT_ERI0
+                0x00000496                INT_IRQ1
+                0x0000050e                INT_IMIA1
+                0x000004ae                INT_IRQ3
+                0x00000622                INT_TEI1
+                0x000005e6                INT_TXI0
+                0x000004de                INT_CMI
+                0x000005c2                INT_DEND1B
+                0x000004a2                INT_IRQ2
+                0x0000048a                INT_IRQ0
+                0x00000586                INT_IMIB4
+                0x000005b6                INT_DEND1A
+                0x00000502                INT_OVI0
+                0x00000472                INT_TRAP3
+                0x0000060a                INT_RXI1
+                0x0000045a                INT_TRAP1
+                0x00000616                INT_TXI1
+                0x000005da                INT_RXI0
+                0x00000556                INT_IMIA3
+                0x0000051a                INT_IMIB1
+                0x00000526                INT_OVI1
+                0x000005fe                INT_ERI1
+                0x0000047e                INT_TRAP4
+                0x000005aa                INT_DEND0B
+                0x00000592                INT_OVI4
+                0x000004ea                INT_IMIA0
+                0x0000044e                INT_NMI
+ .text          0x0000063a      0x1a8 C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\LCD.o
+                0x000007ae                KursorOff
+                0x00000750                putchar
+                0x0000070e                GotoXY
+                0x00000790                KursorOn
+                0x000006c8                WriteSterLCD
+                0x000007c8                ClrScr
+                0x0000063a                IniLCD
+                0x000006ea                ReadSterLCD
+                0x000006aa                GotowoscLCD
+ .text          0x000007e2       0x4e C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\main.o
+                0x00000804                Ekran_startowy
+                0x000007e2                main
+ .text          0x00000830       0x4a C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\start.o
+                0x00000830                start
+ *(.text.*)
+                0x0000087a                etext = .
+
+.init
+ *(.init)
+
+.fini
+ *(.fini)
+
+.got
+ *(.got)
+ *(.got.plt)
+
+.rodata         0x0000087a        0x0
+ *(.rodata)
+ *(.rodata.*)
+                0x0000087a                _erodata = .
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.jcr
+ *(.jcr)
+
+.tors           0x0000087a        0x0
+                0x0000087a                __CTOR_LIST__ = .
+                0x0000087a                ___ctors = .
+ *(.ctors)
+                0x0000087a                ___ctors_end = .
+                0x0000087a                __CTOR_END__ = .
+                0x0000087a                __DTOR_LIST__ = .
+                0x0000087a                ___dtors = .
+ *(.dtors)
+                0x0000087a                ___dtors_end = .
+                0x0000087a                __DTOR_END__ = .
+                0x0000087a                _mdata = .
+
+.data           0x00ffef10        0x0
+                0x00ffef10                _data = .
+ *(.data)
+ *(.data.*)
+                0x00ffef10                _edata = .
+
+.gcc_exc
+ *(.gcc_exc)
+
+.bss            0x00ffef10        0x2
+                0x00ffef10                _bss = .
+ *(.bss)
+ *(COMMON)
+ COMMON         0x00ffef10        0x2 C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\main.o
+                0x00ffef10                count
+                0x00ffef12                _ebss = .
+                0x00ffef12                _end = .
+
+.stack          0x00ffff00        0x0
+                0x00ffff00                _stack = .
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\hwinit.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inline.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inthandler.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\LCD.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\main.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\start.o
+LOAD C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\vects.o
+START GROUP
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptm.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\h8300-coff\lib\h8300h\liboptc.a
+LOAD c:\program files\hitachi\hew\tools\kpit cummins\gnuh8-coff\v0601\h8300-coff\lib\gcc\h8300-coff\4.0-GNUH8_v0601\h8300h\libgcc.a
+END GROUP
+OUTPUT(C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\PRG1.x coff-h8300)
+
+.comment        0x00ffff00       0xa8
+ .comment       0x00ffff00       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\hwinit.o
+ .comment       0x00ffff1c       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inline.o
+ .comment       0x00ffff38       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\inthandler.o
+ .comment       0x00ffff54       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\LCD.o
+ .comment       0x00ffff70       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\main.o
+ .comment       0x00ffff8c       0x1c C:\Documents and Settings\h8_2lab\Pulpit\H8Start\PRG1\Release\vects.o
+
+.vectors        0x00ffffa8        0x0
